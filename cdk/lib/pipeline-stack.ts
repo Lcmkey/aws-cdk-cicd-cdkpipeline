@@ -79,17 +79,17 @@ export class PipelineStack extends Stack {
                 subdirectory: "cdk",
                 installCommand: "npm i",
                 buildCommand: "npx cdk synth",
-                // environmentVariables: {
-                // commitId: { value: "#{SourceNameSpace.CommitId}" },
-                // execId: { value: "#{codepipeline.PipelineExecutionId}" },
-                // PREFIX: { value: prefix },
-                // STAGE: { value: stage },
-                // CDK_ACCOUNT: { value: env?.account },
-                // CDK_REGION: { value: env?.region },
-                // REPO: { value: repo },
-                // OWNER: { value: owner },
-                // BRANCH: { value: branch }
-                // }
+                environmentVariables: {
+                    commitId: { value: "#{SourceNameSpace.CommitId}" },
+                    execId: { value: "#{codepipeline.PipelineExecutionId}" },
+                    PREFIX: { value: prefix },
+                    STAGE: { value: stage },
+                    // CDK_ACCOUNT: { value: env?.account },
+                    // CDK_REGION: { value: env?.region },
+                    // REPO: { value: repo },
+                    // OWNER: { value: owner },
+                    // BRANCH: { value: branch }
+                }
             }),
         });
 
