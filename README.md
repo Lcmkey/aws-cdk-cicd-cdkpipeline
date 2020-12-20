@@ -32,7 +32,7 @@
 
     ```properties
     $ cdk ls
-    ``
+    ```
 
 7. Deploy to AWS
 
