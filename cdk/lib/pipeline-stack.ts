@@ -26,7 +26,7 @@ export class PipelineStack extends Stack {
         /**
          * Get Env Variables
          */
-        const { env, prefix, stage, repo, owner, branch, oauthToken } = props;
+        const { prefix, stage, repo, owner, branch, oauthToken } = props;
 
         /**
          * Arifact Definitions

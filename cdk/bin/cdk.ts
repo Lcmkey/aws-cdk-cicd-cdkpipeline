@@ -45,7 +45,7 @@ try {
         region = ssm.region;
         repo = ssm.repo;
         owner = ssm.owner;
-        branch = ssm.owner;
+        branch = ssm.branch;
         gitToken = ssm.gitToken;
     }
 } catch (err) {
