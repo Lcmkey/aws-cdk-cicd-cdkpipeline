@@ -86,9 +86,9 @@ export class PipelineStack extends Stack {
                     STAGE: { value: stage },
                     CDK_ACCOUNT: { value: process.env.CDK_DEFAULT_ACCOUNT },
                     CDK_REGION: { value: process.env.CDK_DEFAULT_REGION },
-                    // REPO: { value: repo },
-                    // OWNER: { value: owner },
-                    // BRANCH: { value: branch }
+                    REPO: { value: repo },
+                    OWNER: { value: owner },
+                    BRANCH: { value: branch }
                 }
             }),
         });
