@@ -47,8 +47,8 @@ export class PipelineStack extends Stack {
          */
         const sourceAction = new GitHubSourceAction({
             actionName: "GitHub_Source_Download",
-            owner,
             repo,
+            owner,
             branch,
             // oauthToken: SecretValue.plainText("token"),
             oauthToken: SecretValue.plainText(
@@ -87,8 +87,8 @@ export class PipelineStack extends Stack {
                     CDK_ACCOUNT: { value: env?.account },
                     CDK_REGION: { value: env?.region },
                     REPO: { value: repo },
-                    owner: { value: owner },
-                    branch: { value: branch }
+                    OWNER: { value: owner },
+                    BRANCH: { value: branch }
                 }
             }),
         });

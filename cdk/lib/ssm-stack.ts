@@ -34,9 +34,9 @@ export class SsmStack extends Stack {
         const project_stage = StringParameter.valueFromLookup(this, `/${prefix}/${stage}/STAGE`);
         const project_accountId = StringParameter.valueFromLookup(this, `/${prefix}/${stage}/CDK_ACCOUNT`);
         const project_region = StringParameter.valueFromLookup(this, `/${prefix}/${stage}/CDK_REGION`);
-        const project_repo = StringParameter.valueFromLookup(this, `/${prefix}/${stage}/REPO`);
-        const project_owner = StringParameter.valueFromLookup(this, `/${prefix}/${stage}/OWNER`);
-        const project_branch = StringParameter.valueFromLookup(this, `/${prefix}/${stage}/BRANCH`);
+        const project_repo = StringParameter.valueFromLookup(this, `/${prefix}/${stage}/GIT_REPO`);
+        const project_owner = StringParameter.valueFromLookup(this, `/${prefix}/${stage}/GIT_OWNER`);
+        const project_branch = StringParameter.valueFromLookup(this, `/${prefix}/${stage}/GIT_BRANCH`);
         const gitToken = StringParameter.valueFromLookup(this, `/${prefix}/${stage}/GITHUB_TOEKN_KEY`);
 
         this.prefix = project_prefix;
