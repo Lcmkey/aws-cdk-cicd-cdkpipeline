@@ -3,5 +3,8 @@
   "ssm:account=201499839889:parameterName=/Cicd-CDKPipeline/Dev/STAGE:region=us-east-1": "Dev",
   "ssm:account=201499839889:parameterName=/Cicd-CDKPipeline/Dev/CDK_ACCOUNT:region=us-east-1": "115298227216",
   "ssm:account=201499839889:parameterName=/Cicd-CDKPipeline/Dev/CDK_REGION:region=us-east-1": "us-east-1",
-  "ssm:account=201499839889:parameterName=/Cicd-CDKPipeline/Dev/GITHUB_TOEKN_KEY:region=us-east-1": "GITHUB_OAUTH_TOKEN"
+  "ssm:account=201499839889:parameterName=/Cicd-CDKPipeline/Dev/GITHUB_TOEKN_KEY:region=us-east-1": "GITHUB_OAUTH_TOKEN",
+  "ssm:account=201499839889:parameterName=/Cicd-CDKPipeline/Dev/GITHUB_REPO:region=us-east-1": "aws-cdk-cicd-cdkpipeline",
+  "ssm:account=201499839889:parameterName=/Cicd-CDKPipeline/Dev/GITHUB_OWNER:region=us-east-1": "Lcmkey",
+  "ssm:account=201499839889:parameterName=/Cicd-CDKPipeline/Dev/GITHUB_BRANCH:region=us-east-1": "master"
 }
