@@ -43,6 +43,9 @@ try {
         stage = ssm.stage;
         accountId = ssm.accountId;
         region = ssm.region;
+        repo = ssm.repo;
+        owner = ssm.owner;
+        branch = ssm.owner;
         gitToken = ssm.gitToken;
 
         console.log(prefix);

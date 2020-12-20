@@ -11,6 +11,9 @@ export class SsmStack extends Stack {
     readonly stage: string;
     readonly accountId: string;
     readonly region: string;
+    readonly repo: string;
+    readonly owner: string;
+    readonly branch: string;
     readonly gitToken: string
 
     constructor(scope: Construct, id: string, props: SsmStackProps) {
@@ -31,12 +34,18 @@ export class SsmStack extends Stack {
         const project_stage = StringParameter.valueFromLookup(this, `/${prefix}/${stage}/STAGE`);
         const project_accountId = StringParameter.valueFromLookup(this, `/${prefix}/${stage}/CDK_ACCOUNT`);
         const project_region = StringParameter.valueFromLookup(this, `/${prefix}/${stage}/CDK_REGION`);
+        const project_repo = StringParameter.valueFromLookup(this, `/${prefix}/${stage}/REPO`);
+        const project_owner = StringParameter.valueFromLookup(this, `/${prefix}/${stage}/OWNER`);
+        const project_branch = StringParameter.valueFromLookup(this, `/${prefix}/${stage}/BRANCH`);
         const gitToken = StringParameter.valueFromLookup(this, `/${prefix}/${stage}/GITHUB_TOEKN_KEY`);
 
         this.prefix = project_prefix;
         this.stage = project_stage;
         this.accountId = project_accountId;
         this.region = project_region;
+        this.repo = project_repo;
+        this.owner = project_owner;
+        this.branch = project_branch;
         this.gitToken = gitToken;
     }
 }
