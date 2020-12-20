@@ -1,24 +1,24 @@
 # AWS
 export CDK_ACCOUNT=${YOUR AWS ACCOUNT ID}
-export AWS_DEFAULT_PROFILE="default"
+export AWS_DEFAULT_PROFILE=default
 
 # Common
-export APP_IMAGE_NAME="Cicd-CDKPipeline"
+export APP_IMAGE_NAME=Cicd-CDKPipeline
 
 # CDK
-export PREFIX="Cicd-CDKPipeline"
+export PREFIX=Cicd-CDKPipeline
 export STAGE=Dev
 export CDK_REGION=us-east-1
-export THIS_DEPLOYMENT_ENV="Dev"
+export THIS_DEPLOYMENT_ENV=Dev
 export GITHUB_TOEKN_KEY=GITHUB_OAUTH_TOKEN
 export THIS_ECR_REPO_NAME=${APP_IMAGE_NAME}-${THIS_DEPLOYMENT_ENV}
 
 # Application .env
-export APP_NAME="Cicd-CDKPipeline"
-export APP_ENV="Dev"
+export APP_NAME=Cicd-CDKPipeline
+export APP_ENV=Dev
 export GITHUB_OAUTH_TOKEN=${YOUR GITHUB OAUTH TOKEN}
 
 # Github Repositroy
-REPO=aws-cdk-cicd-cdkpipeline
-OWNER=Lcmkey
-BRANCH=master
+export GITHUB_REPO=aws-cdk-cicd-cdkpipeline
+export GITHUB_OWNER=Lcmkey
+export GITHUB_BRANCH=master
