@@ -51,8 +51,9 @@ export class PipelineStack extends Stack {
             repo,
             branch,
             // oauthToken: SecretValue.plainText(oauthToken),
-            oauthToken: SecretValue.plainText(
-                StringParameter.valueForStringParameter(this, `/${prefix}/${stage}/${oauthToken}`)),
+            oauthToken: SecretValue.secretsManager(`/${prefix}/${stage}/${oauthToken}`),
+            // oauthToken: SecretValue.plainText(
+            //     StringParameter.valueForStringParameter(this, `/${prefix}/${stage}/${oauthToken}`)),
             // oauthToken: SecretValue.secretsManager(`${prefix}-${stage}-${oauthToken}`, {
             //     jsonField: "token"
             // }),

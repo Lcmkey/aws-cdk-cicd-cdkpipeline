@@ -47,8 +47,6 @@ try {
         owner = ssm.owner;
         branch = ssm.owner;
         gitToken = ssm.gitToken;
-
-        console.log(prefix);
     }
 } catch (err) {
 }
