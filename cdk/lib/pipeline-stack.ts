@@ -26,7 +26,7 @@ export class PipelineStack extends Stack {
         /**
          * Get Env Variables
          */
-        const { prefix, stage, repo, owner, branch, oauthToken } = props;
+        const { env, prefix, stage, repo, owner, branch, oauthToken } = props;
 
         /**
          * Arifact Definitions
@@ -79,6 +79,17 @@ export class PipelineStack extends Stack {
                 subdirectory: "cdk",
                 installCommand: "npm i",
                 buildCommand: "npx cdk synth",
+                environmentVariables: {
+                    commitId: { value: "#{SourceNameSpace.CommitId}" },
+                    execId: { value: "#{codepipeline.PipelineExecutionId}" },
+                    PREFIX: { value: prefix },
+                    STAGE: { value: stage },
+                    CDK_ACCOUNT: { value: env?.account },
+                    CDK_REGION: { value: env?.region },
+                    REPO: { value: repo },
+                    owner: { value: owner },
+                    branch: { value: branch }
+                }
             }),
         });
 

@@ -38,16 +38,16 @@ const ssm = new SsmStack(app, `${prefix}-${stage}-SsmStack`, {
 });
 
 try {
-    // if (JSON.parse(RUN_IN_AWS_PIEPLINE)) {
-    prefix = ssm.prefix;
-    stage = ssm.stage;
-    accountId = ssm.accountId;
-    region = ssm.region;
-    repo = ssm.repo;
-    owner = ssm.owner;
-    branch = ssm.owner;
-    gitToken = ssm.gitToken;
-    // }
+    if (JSON.parse(RUN_IN_AWS_PIEPLINE)) {
+        prefix = ssm.prefix;
+        stage = ssm.stage;
+        accountId = ssm.accountId;
+        region = ssm.region;
+        repo = ssm.repo;
+        owner = ssm.owner;
+        branch = ssm.owner;
+        gitToken = ssm.gitToken;
+    }
 } catch (err) {
 }
 
