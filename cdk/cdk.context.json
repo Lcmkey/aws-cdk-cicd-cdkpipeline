@@ -1,1 +1,18 @@
-{}
+{
+  "ssm:account=201499839889:parameterName=/Cicd-CDKPipeline-Lambda-Docker-Ver/Dev/PREFIX:region=us-east-1": "Cicd-CDKPipeline-Lambda-Docker-Ver",
+  "ssm:account=201499839889:parameterName=/Cicd-CDKPipeline-Lambda-Docker-Ver/Dev/STAGE:region=us-east-1": "Dev",
+  "ssm:account=201499839889:parameterName=/Cicd-CDKPipeline-Lambda-Docker-Ver/Dev/CDK_ACCOUNT:region=us-east-1": "Cicd-CDKPipeline-Lambda-Docker-Ver",
+  "ssm:account=201499839889:parameterName=/Cicd-CDKPipeline-Lambda-Docker-Ver/Dev/CDK_REGION:region=us-east-1": "us-east-1",
+  "ssm:account=201499839889:parameterName=/Cicd-CDKPipeline-Lambda-Docker-Ver/Dev/GITHUB_REPO:region=us-east-1": "aws-cdk-cicd-cdkpipeline-lambda-docker-version",
+  "ssm:account=201499839889:parameterName=/Cicd-CDKPipeline-Lambda-Docker-Ver/Dev/GITHUB_OWNER:region=us-east-1": "Lcmkey",
+  "ssm:account=201499839889:parameterName=/Cicd-CDKPipeline-Lambda-Docker-Ver/Dev/GITHUB_BRANCH:region=us-east-1": "master",
+  "ssm:account=201499839889:parameterName=/Cicd-CDKPipeline-Lambda-Docker-Ver/Dev/GITHUB_TOEKN_KEY:region=us-east-1": "GITHUB_OAUTH_TOKEN",
+  "ssm:account=201499839889:parameterName=/Cicd-CDKPipeline/Dev/PREFIX:region=us-east-1": "Cicd-CDKPipeline",
+  "ssm:account=201499839889:parameterName=/Cicd-CDKPipeline/Dev/STAGE:region=us-east-1": "Dev",
+  "ssm:account=201499839889:parameterName=/Cicd-CDKPipeline/Dev/CDK_ACCOUNT:region=us-east-1": "201499839889",
+  "ssm:account=201499839889:parameterName=/Cicd-CDKPipeline/Dev/CDK_REGION:region=us-east-1": "us-east-1",
+  "ssm:account=201499839889:parameterName=/Cicd-CDKPipeline/Dev/GITHUB_REPO:region=us-east-1": "aws-cdk-cicd-cdkpipeline",
+  "ssm:account=201499839889:parameterName=/Cicd-CDKPipeline/Dev/GITHUB_OWNER:region=us-east-1": "Lcmkey",
+  "ssm:account=201499839889:parameterName=/Cicd-CDKPipeline/Dev/GITHUB_BRANCH:region=us-east-1": "master",
+  "ssm:account=201499839889:parameterName=/Cicd-CDKPipeline/Dev/GITHUB_TOEKN_KEY:region=us-east-1": "GITHUB_OAUTH_TOKEN"
+}

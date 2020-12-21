@@ -39,7 +39,7 @@ You can find the environment reference in [here][Environments] and [here][Enviro
 7. Deploy to AWS
 
     ```properties
-    $ cdk deploy Cicd-CDKPipeline-Dev-PipelineStack,
+    $ cdk deploy Cicd-CDKPipeline-Dev-PipelineStack
     ```
 
 After the Stack has been deployed, go to the AWS console `CodePiepline` Service Page, Until the Pipeline done
